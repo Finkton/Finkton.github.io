@@ -44,7 +44,9 @@ options = {
   },
   tooltips:{
     enabled:true
-  }
+  },
+  responsive: true,
+  maintainAspectRatio: false,
 };
 
 if ('serviceWorker' in navigator) {
@@ -60,3 +62,5 @@ var myDoughnutChart = new Chart(ctx, {
     data: data,
     options: options
 });
+
+myDoughnutChart.canvas.parentNode.style.height = '628px';
