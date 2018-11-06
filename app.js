@@ -229,7 +229,9 @@ var c1 = document.getElementById("c1");
 console.log(toString(c1.style.height));
 
 myDoughnutChart.canvas.parentNode.style.height = '400px';
-
+let deferredPrompt;
+const addBtn = document.querySelector('.navbar-brand');
+addBtn.style.display = 'none';
 window.addEventListener('beforeinstallprompt', (e) => {
   // Prevent Chrome 67 and earlier from automatically showing the prompt
   e.preventDefault();
