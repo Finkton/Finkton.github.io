@@ -3,7 +3,9 @@ const cacheName = 's2';
 const staticAssets = [
   './',
   './app.js',
-  './album.css'
+  './album.css',
+  './manifest.json',
+  '/bootstrap/3.3.7/css/bootstrap.min.css',
 ];
 
 importScripts('./workbox-sw.js');
