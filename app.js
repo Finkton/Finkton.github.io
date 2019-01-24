@@ -1,3 +1,4 @@
+
 let deferredPrompt;
 const addBtn = document.querySelector('.navbar-brand');
 addBtn.style.display = 'none';
