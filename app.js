@@ -1,6 +1,4 @@
 
-
-myDoughnutChart.canvas.parentNode.style.height = '400px';
 let deferredPrompt;
 const addBtn = document.querySelector('.navbar-brand');
 addBtn.style.display = 'none';
