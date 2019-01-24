@@ -19,6 +19,14 @@ if (workbox) {
 //workbox.precaching.precache(staticAssets);
 
 workbox.routing.registerRoute(
-  new RegExp('.*\.'),
+  new RegExp('.*\.js'),
+  workbox.strategies.networkFirst()
+);
+workbox.routing.registerRoute(
+  new RegExp('.*\.css'),
+  workbox.strategies.networkFirst()
+);
+workbox.routing.registerRoute(
+  new RegExp('.*\.json'),
   workbox.strategies.networkFirst()
 );
