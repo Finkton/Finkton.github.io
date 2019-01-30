@@ -1,321 +1,48 @@
-<!DOCTYPE html>
-<!-- saved from url=(0032)https://www.website.com/sign-in/ -->
-<html class="cssall supports cssfilters csstransforms3d csstransitions gr__website_com mdl-js"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-	
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <link rel = "stylesheet" href = "styles.css">
+    <title>Scube</title>
+  </head>
+  <body>
+		<div class="wrapper fadeInDown">
+		  <div id="formContent">
+		    <!-- Tabs Titles -->
 
-<meta name="viewport" content="width=device-width, maximum-scale=1.0">
-<meta name="description" content="Log in to your Website.com account">
-<link rel="dns-prefetch preconnect" href="https://apis.google.com/">
-<link rel="dns-prefetch preconnect" href="https://fonts.gstatic.com/">
-<title>Log in — Website.com</title>
+		    <!-- Icon -->
+		    <div class="fadeIn first">
+		      <img src="http://icons.iconarchive.com/icons/paomedia/small-n-flat/1024/sign-check-icon.png" id="icon" alt="User Icon" />
+		    </div>
 
-<link href="./Log in — Website.com_files/css" rel="stylesheet" type="text/css">
+		    <!-- Login Form -->
+		    <form>
+		      <input type="text" id="login" class="fadeIn second" name="login" placeholder="login">
+		      <input type="text" id="password" class="fadeIn third" name="login" placeholder="password">
+		      <input type="submit" class="fadeIn fourth" value="Log In">
+		    </form>
 
-<link rel="stylesheet" type="text/css" href="./Log in — Website.com_files/core-pack.css">
-<!--[if lt IE 9]>
-<link rel="stylesheet" type="text/css" href="/style/coreIE.css?20190129012438">
-<![endif]-->
+		    <!-- Remind Passowrd -->
+		    <div id="formFooter">
+		      <a class="underlineHover" href="#">Forgot Password?</a>
+		    </div>
 
-<link rel="shortcut icon" href="https://www.website.com/favicon.ico">
-
-<script async="true" type="text/javascript" src="./Log in — Website.com_files/roundtrip.js.download"></script><style></style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
-.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_dialog_advanced{border-radius:8px;padding:10px}.fb_dialog_content{background:#fff;color:#373737}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{left:5px;right:auto;top:5px}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{height:100%;left:0;margin:0;overflow:visible;position:absolute;top:-10000px;transform:none;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{background:none;height:auto;min-height:initial;min-width:initial;width:auto}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{clear:both;color:#fff;display:block;font-size:18px;padding-top:20px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .4);bottom:0;left:0;min-height:100%;position:absolute;right:0;top:0;width:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:sticky;top:0}.fb_dialog_content .dialog_header{background:linear-gradient(from(#738aba), to(#2c4987));border-bottom:1px solid;border-color:#1d3c78;box-shadow:white 0 1px 1px -1px inset;color:#fff;font:bold 14px Helvetica, sans-serif;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:linear-gradient(from(#4267B2), to(#2a4887));background-clip:padding-box;border:1px solid #29487d;border-radius:3px;display:inline-block;line-height:18px;margin-top:3px;max-width:85px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{background:none;border:none;color:#fff;font:bold 12px Helvetica, sans-serif;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #4a4a4a;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f5f6f7;border:1px solid #4a4a4a;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-position:50% 50%;background-repeat:no-repeat;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
-.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}</style><script type="text/javascript" src="./Log in — Website.com_files/O6JGJWLMA5GCBLAJOOV7MA"></script><script async="true" type="text/javascript" src="./Log in — Website.com_files/3YHASKE27RAYFAJWKW6PCF"></script><div style="width: 1px; height: 1px; display: inline; position: absolute;"><img height="1" width="1" style="border-style:none;" alt="" src="./Log in — Website.com_files/out">
-<img height="1" width="1" style="border-style:none;" alt="" src="./Log in — Website.com_files/out(1)">
-<img height="1" width="1" style="border-style:none;" alt="" src="./Log in — Website.com_files/out(2)">
-<img height="1" width="1" style="border-style:none;" alt="" src="https://d.adroll.com/cm/l/out?advertisable=O6JGJWLMA5GCBLAJOOV7MA">
-<img height="1" width="1" style="border-style:none;" alt="" src="./Log in — Website.com_files/out(3)">
-<img height="1" width="1" style="border-style:none;" alt="" src="./Log in — Website.com_files/out(4)">
-</div></head>
-<body class=" webp" data-gr-c-s-loaded="true"><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override-1790763440  cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">By clicking "Accept", you agree to the use of Website.com and third party cookies as well as other similar technologies to enhance your browsing experience, analyze your engagement with our content, and for other legitimate business purposes.  Learn more about <a href="https://www.website.com/cookie-policy/">cookies</a>.  You can withdraw your consent at any time.</span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Accept</a></div><!--googleon: all--></div>
-
-<div id="promoTopBanner" class="show" style="width: 1903px;">
-	<p>
-		Limited Time Offer! Get 12 months of Premium Plan with a free domain for just $1 per month.
-		<a class="signupPopup" href="https://www.website.com/sign-up/" title="Get Started Now">Get Started Now<span></span></a>
-	</p>
-	<a href="https://www.website.com/sign-in/#" class="close">Close</a>
-</div>
-
-<div id="site-wrapper">
-<div id="site-header">
-	
-	<div class="topbar">
-		<div class="wrapper clearfix">
-			<div class="topbarItems">
-				<div id="site-logo"><a href="https://www.website.com/" title="Website.com Website Builder"><span>Website.com Website Builder</span></a></div>
-				<ul>
-					<li id="topbarItems-contactus"><a id="support-contactus" href="https://www.website.com/contact-us/" title="Contact Us">Contact Us</a></li>
-					
-					<li><a title="Live Chat" href="https://www.website.com/sign-in/#" class="liveChatApp"><span><i></i>Live Chat</span></a></li>
-					
-					<li>
-						
-						<a href="https://www.website.com/webmail/sign-in/" id="webmailFunction">Mail</a>
-						
-					</li>
-					<li>
-						
-							<a href="https://www.website.com/sign-in/" id="memberFunction" class="login">Log In</a>
-						
-					</li>
-					<li><a id="menuSignup" class="signup" href="https://www.website.com/sign-up/">Sign Up</a></li>
-				</ul>
-			</div>
+		  </div>
 		</div>
-	</div>
 
-<ul id="miniMenuItem" style="">
-	<li class="menuSignup"><a href="https://www.website.com/sign-in/#" id="closeMiniMenu"></a><a href="https://www.website.com/sign-up/" title="Sign Up">Sign Up Now</a></li>
-	<li><a href="https://www.website.com/">Home</a></li>
-	<li><a href="https://www.website.com/website-templates/" class="websiteTemplatePath" title="Templates">Templates</a></li>
-	<li><a href="https://www.website.com/features/" title="Features">Features</a></li>
-	<li><a href="https://www.website.com/ecommerce/" title="Ecommerce">Ecommerce</a></li>
-	<li><a href="https://www.website.com/restaurant-website/" title="Restaurant">Restaurant</a></li>
-	<li><a href="https://www.website.com/seo/" title="Easy SEO">Easy SEO</a></li>
-	<li><a href="https://www.website.com/ab-testing/" title="A/B Testing">A/B Testing</a></li>
-	<li><a href="https://www.website.com/pricing/" title="Subscriptions">Subscriptions</a></li>
-	<li><a href="https://www.website.com/resources/" title="Resources">Resources</a></li>
-	<li><a href="https://www.website.com/contact-us/" title="Contact Us"><span>Contact Us</span></a></li>
-	
-	<li><a title="Live Chat" href="https://www.website.com/sign-in/#" class="liveChatApp"><span><i></i>Live Chat</span></a></li>
-	
-	<li class="email" title="Webmail Log In"><a href="https://www.website.com/webmail/sign-in/"><span>Mail</span></a></li>
-	<li class="signin">
-		
-			<a href="https://www.website.com/sign-in/"><span>Log In</span></a>
-		
-	</li>
-	
-	<li class="last clearfix">
-		<ul id="header-social">
-			<li><a href="http://www.facebook.com/websitedotcom" target="_blank" class="facebook" title="Facebook" rel="noopener"></a></li>
-			<li><a href="http://www.twitter.com/websitedotcom/" target="_blank" class="twitter" title="Twitter" rel="noopener"></a></li>
-			<li><a href="http://www.youtube.com/websitedotcomlimited" target="_blank" class="youtube" title="YouTube" rel="noopener"></a></li>
-			<li><a href="http://blog.website.com/" target="_blank" class="wsblog" title="Website.com Official Blog" rel="noopener"></a></li>
-		</ul>
-	</li>
-
-</ul>
-
-	<div id="menuSection" class="wrapper clearfix ">
-		
-		<ul id="site-menu" class="clearfix">
-			<li class="fixedOnly"><a id="fixedLogo" href="https://www.website.com/" title="Website.com Website Builder"><span></span></a></li>
-			
-	<li><a href="https://www.website.com/website-templates/" class="websiteTemplatePath" title="Templates">Templates</a></li>
-	<li><a href="https://www.website.com/features/" title="Features">Features</a></li>
-	<li><a href="https://www.website.com/ecommerce/" title="Ecommerce">Ecommerce</a></li>
-	<li><a href="https://www.website.com/restaurant-website/" title="Restaurant">Restaurant</a></li>
-	<li><a href="https://www.website.com/seo/" title="Easy SEO">Easy SEO</a></li>
-	<li><a href="https://www.website.com/pricing/" title="Subscriptions">Subscriptions</a></li>
-	<li><a href="https://www.website.com/resources/" title="Resources">Resources</a></li>
-
-			<li class="fixedOnly"><a class="signup" href="https://www.website.com/sign-up/">Sign Up</a></li>
-		</ul>
-		
-		<a id="miniMenuSiteLogo" href="https://www.website.com/"></a>
-		<a id="miniMenu" href="https://www.website.com/sign-in/#"></a>
-	</div>
-	
-	
-</div>
-<div id="site-header-footer"></div>
-<div id="site-body">
-
-	
-<link rel="stylesheet" type="text/css" href="./Log in — Website.com_files/signin.css">
-<div id="signin-wrapper" class="wrapper wrapperPadding">
-	<h1>Log In</h1>
-	<p class="faSignupTitle">Don't have an account? <a href="https://www.website.com/sign-up/">Join Website.com now.</a></p>
-	
-	
-
-	<br>
-	<div id="signinRow">
-		
-	
-		<form id="signin-form" method="post" action="https://www.website.com/sign-in/submit/" class="formField col" novalidate="novalidate">
-		
-		<fieldset>
-			<ul>
-				<li>
-					<div class="mdl-textfield mdl-js-textfield is-upgraded" data-upgraded=",MaterialTextfield">
-						<input type="text" class="mdl-textfield__input" name="username" id="username" value="" tabindex="1" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">	
-						<label class="mdl-textfield__label" for="username">Username</label>
-					</div>
-					<a href="https://www.website.com/forgot-username/" id="forgotUsername" tabindex="4">Forgot Your Username?</a>
-				</li>
-				<li class="loginPasswordField">
-					<div class="mdl-textfield mdl-js-textfield is-upgraded" data-upgraded=",MaterialTextfield">
-						<input type="password" class="mdl-textfield__input" name="password" id="password" value="" tabindex="2" autocomplete="off" style="background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABAAAAASCAYAAABSO15qAAAAAXNSR0IArs4c6QAAAPhJREFUOBHlU70KgzAQPlMhEvoQTg6OPoOjT+JWOnRqkUKHgqWP4OQbOPokTk6OTkVULNSLVc62oJmbIdzd95NcuGjX2/3YVI/Ts+t0WLE2ut5xsQ0O+90F6UxFjAI8qNcEGONia08e6MNONYwCS7EQAizLmtGUDEzTBNd1fxsYhjEBnHPQNG3KKTYV34F8ec/zwHEciOMYyrIE3/ehKAqIoggo9inGXKmFXwbyBkmSQJqmUNe15IRhCG3byphitm1/eUzDM4qR0TTNjEixGdAnSi3keS5vSk2UDKqqgizLqB4YzvassiKhGtZ/jDMtLOnHz7TE+yf8BaDZXA509yeBAAAAAElFTkSuQmCC&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
-						<label class="mdl-textfield__label" for="password">Password</label>
-					</div>
-					<a href="https://www.website.com/forgot-password/" id="forgotPassword" tabindex="3">Forgot Password?</a>
-				</li>
-				
-					<li class="captcha"></li>
-				
-				<li class="signinBttn"><button class="mdl-button mdl-js-button mdl-button--raised" tabindex="6" id="signin-submit2" title="Log In" type="submit" data-upgraded=",MaterialButton">Log In</button></li>
-			</ul>
-			
-			<p class="affiliate">Looking for <a href="https://www.website.com/affiliate/sign-in/">Affiliate Login</a>?</p>
-			
-		</fieldset>
-		
-		</form>
-	
-		<div class="dividerwrap col">
-			<div class="divider"><div class="top"></div><span>OR</span><div class="bottom"></div></div>
-		</div>
-	
-		
-		<div id="socialLoginCol" class="col">
-			<p>Log in using the following</p>
-			<div id="socialSigninError">
-				
-			</div>
-			<ul>
-				<li><button id="signinWithFacebook" class="mdl-button mdl-js-button mdl-button--raised" type="button" data-upgraded=",MaterialButton">Log in with Facebook</button></li>
-				<li id="gapiSignin"><button id="signinWithGoogle" class="mdl-button mdl-js-button mdl-button--raised" type="button" data-upgraded=",MaterialButton">Log in with Google</button></li>
-			</ul>
-			<form id="socialSigninForm" action="https://www.website.com/sign-in/submit/" method="post">
-				<input id="st" type="hidden" name="st">
-				<input id="token" type="hidden" name="token">
-			
-			</form>
-		</div>
-	</div>
-</div>
-<div id="signup-block"><a href="https://www.website.com/sign-up/">Don't have an account? Join Website.com now.</a></div>
-
-<div id="site-body-footer"></div>
-</div>
-</div>
-<div id="site-footer">
-	<div class="wrapper clearfix">
-		
-<ul id="footer-links" class="clearfix" data-currenttime="0" data-pagetime="90" data-sitetime="180">
-	<li class="columns col1">
-		<input type="checkbox" name="1colLabel" id="1colLabel">
-		<label class="colTop" for="1colLabel">Product<i></i></label>
-		<ul>
-			<li><a href="https://www.website.com/website-templates/" class="websiteTemplatePath" title="Templates">Templates<span></span></a></li>
-			<li><a href="https://www.website.com/features/" title="Features">Features<span></span></a></li>
-			<li><a href="https://www.website.com/ecommerce/" title="Ecommerce">Ecommerce<span></span></a></li>
-			<li><a href="https://www.website.com/restaurant-website/" title="Restaurant">Restaurant<span></span></a></li>
-			<li><a href="https://www.website.com/seo/" title="Easy SEO">Easy SEO<span></span></a></li>
-			<li><a href="https://www.website.com/ab-testing/" title="A/B Testing">A/B Testing<span></span></a></li>
-			<li><a href="https://www.website.com/pricing/" title="Subscriptions">Subscriptions<span></span></a></li>
-			
-			<li><a href="https://www.website.com/affiliate/" title="Affiliate Program">Affiliate Program<span></span></a></li>	
-			
-			<li><a href="https://www.website.com/webmail/sign-in/" title="Webmail Login">Webmail Login<span></span></a></li>
-			
-				<li><a href="https://www.website.com/sign-in/" title="Login">My Site Login<span></span></a></li>
-			
-				<li><a href="https://www.website.com/affiliate/sign-in/" title="Affiliate Login">Affiliate Login<span></span></a></li>
-			
-		</ul>
-	</li>
-	<li class="columns col2">
-		<input type="checkbox" name="2colLabel" id="2colLabel">
-		<label class="colTop" for="2colLabel">Company<i></i></label>
-		<ul>
-			<li><a href="http://blog.website.com/" target="_blank" title="Website.com Blog">Website.com Blog<span></span></a></li>
-			<li><a href="https://www.website.com/about-us/" title="About Us">About Us<span></span></a></li>
-			<li><a href="https://www.website.com/press-and-updates/latest/" title="Press and Updates">Press and Updates<span></span></a></li>
-			<li><a href="https://www.website.com/contact-us/" title="Contact Us">Contact Us<span></span></a></li>
-			<li><a href="https://www.website.com/reviews/" title="Reviews">Reviews<span></span></a></li>
-			<li><a href="https://www.website.com/terms-and-conditions/" title="Terms &amp; Conditions">Terms &amp; Conditions<span></span></a></li>
-			
-				<li class="tworow"><a href="https://www.website.com/affiliate/terms-and-conditions/" title="Affiliate Terms &amp; Conditions">Affiliate Terms &amp; Conditions<span></span></a></li>
-			
-			<li><a href="https://www.website.com/privacy-policy/" title="Privacy Policy">Privacy Policy<span></span></a></li>
-			<li><a href="https://www.website.com/cookie-policy/" title="Cookie Policy">Cookie Policy<span></span></a></li>
-			<li class="terms first"><a href="https://www.website.com/domain-registration-agreement/" title="Domain Registration Agreement">Domain Registration Agreement<span></span></a></li>
-			<li class="terms"><a href="https://www.icann.org/en/registrars/registrant-rights-responsibilities-en.htm" target="_blank" title="ICANN Registrant Rights and Responsibilities">ICANN Registrant Rights and Responsibilities<span></span></a></li>
-			<li class="terms"><a href="https://www.icann.org/resources/pages/educational-2012-02-25-en" target="_blank" title="ICANN Registrant Educational Materials">ICANN Registrant Educational Materials<span></span></a></li>
-			<li class="terms tworow"><a href="https://www.icann.org/resources/pages/benefits-2013-09-16-en" target="_blank" title="ICANN Registrants&#39; Benefits and Responsibilities">ICANN Registrants' Benefits and Responsibilities<span></span></a></li>
-		</ul>
-	</li>
-	<li class="columns col3">
-		<input type="checkbox" name="3colLabel" id="3colLabel">
-		<label class="colTop" for="3colLabel">Support <i></i></label>
-		<ul>
-			<li><a href="https://www.website.com/resources/" title="Resources">Resources<span></span></a></li>
-			<li class="tworow"><a href="https://www.website.com/website-builder-and-web-design/" title="Website Builder and Web Design Articles">Website Builder and Web Design Articles<span></span></a></li>
-			<li><a href="https://www.website.com/beginnerguide/" title="Learning Center">Learning Center<span></span></a></li>
-			<li><a href="https://www.website.com/faq/" title="FAQ">FAQ<span></span></a></li>
-			<li><a href="https://www.website.com/forgot-password/" title="Forgot Password">Forgot Password<span></span></a></li>	
-		</ul>
-	</li>
-	<li class="columns col4">
-		<div class="footer-logo"><a href="https://www.website.com/"></a></div>
-		<div id="footer-copyright">
-			Copyright © 2004-2019 Website.com Solutions Inc. 
-			All Rights Reserved. All other trademarks and copyrights are the property of their respective holders.
-		</div>
-		
-		<ul id="socialLike">
-			<li><iframe src="./Log in — Website.com_files/like.html" scrolling="no" frameborder="0" style="border:none; overflow:hidden; width:82px; height:21px;" allowtransparency="true"></iframe></li>
-		</ul>
-		
-		<ul class="socialIcons clearfix">
-			<li><a href="http://www.facebook.com/websitedotcom" target="_blank" class="facebook" title="Facebook"></a></li>
-			<li><a href="http://www.twitter.com/websitedotcom/" target="_blank" class="twitter" title="Twitter"></a></li>
-			<li><a href="http://www.youtube.com/websitedotcomlimited" target="_blank" class="youtube" title="YouTube"></a></li>
-			<li><a href="http://blog.website.com/" target="_blank" class="wsblog" title="Website.com Official Blog"></a></li>
-		</ul>	
-	</li>
-</ul>
-
-<script id="facebook-jssdk" src="./Log in — Website.com_files/sdk.js.download"></script><script src="./Log in — Website.com_files/cb=gapi.loaded_1" async=""></script><script src="./Log in — Website.com_files/cb=gapi.loaded_0" async=""></script><script type="text/javascript" async="" src="./Log in — Website.com_files/ga.js.download"></script><script type="text/javascript">
-  	var _gaq = _gaq || [];
-  	_gaq.push(['_setAccount', 'UA-4226146-1']);
-  	_gaq.push(['_trackPageview']);
-
-  	(function() {
-    	var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    	ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
-   	 	var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  	})();
-</script>
-<script type="text/javascript">
-	adroll_adv_id = "O6JGJWLMA5GCBLAJOOV7MA";
-	adroll_pix_id = "3YHASKE27RAYFAJWKW6PCF";
-	(function () {
-		var oldonload = window.onload;
-		window.onload = function(){
-		   __adroll_loaded=true;
-		   var scr = document.createElement("script");
-		   var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
-		   scr.setAttribute('async', 'true');
-		   scr.type = "text/javascript";
-		   scr.src = host + "/j/roundtrip.js";
-		   ((document.getElementsByTagName('head') || [null])[0] ||
-		    document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
-		   if(oldonload){oldonload()}};
-	}());
-</script>
-
-	</div>
-</div>
-<a href="https://www.website.com/sign-in/#" class="backToTop"><span><i></i>TOP</span></a>
-<link rel="stylesheet" type="text/css" href="./Log in — Website.com_files/jquery-ui-1.10.3.custom.min.css">
-<script type="text/javascript" src="./Log in — Website.com_files/core-plugin-pack.js.download"></script>
-<script type="text/javascript" src="./Log in — Website.com_files/main.js.download"></script>	
-
-<script src="./Log in — Website.com_files/api_client.js.download" gapi_processed="true"></script>
-<script>
-	var fbAppId = '343318709183843';
-	var goClientId = '429970834430-prgcpbfr5fbncdtpb7aop4th0cq1hbiv.apps.googleusercontent.com';
-</script>
-<script src="./Log in — Website.com_files/socialsignin.js.download"></script>
-
-<script type="text/javascript" src="./Log in — Website.com_files/livechat.js.download"></script>
-
-
-
-<iframe id="ssIFrame_google" sandbox="allow-scripts allow-same-origin" aria-hidden="true" frame-border="0" src="./Log in — Website.com_files/iframe.html" style="position: absolute; width: 1px; height: 1px; left: -9999px; top: -9999px; right: -9999px; bottom: -9999px; display: none;"></iframe><div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; width: 0px; height: 0px;"><div><iframe name="fb_xdm_frame_https" frameborder="0" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" src="./Log in — Website.com_files/GMRn6XEBZ06.html" style="border: none;"></iframe></div><div></div></div></div><iframe id="wsLiveChat" src="./Log in — Website.com_files/saved_resource.html" width="1" height="1" style="position:absolute;top:-9999px;" tabindex="-1"></iframe></body><span class="gr__tooltip"><span class="gr__tooltip-content"></span><i class="gr__tooltip-logo"></i><span class="gr__triangle"></span></span></html>
+    <!-- My JavaScript -->
+    <!-- <script src="app.js"></script> -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <script src="https://unpkg.com/react@16/umd/react.development.js" crossorigin></script>
+    <script src="https://unpkg.com/react-dom@16/umd/react-dom.development.js" crossorigin></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+  </body>
+</html>
