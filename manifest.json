@@ -1,6 +1,6 @@
 {
-  "name": "Scube",
-  "short_name": "Sc",
+  "name": "Image Captioner",
+  "short_name": "IC",
   "theme_color": "#953549",
   "background_color": "#ffffff",
   "display": "standalone",
