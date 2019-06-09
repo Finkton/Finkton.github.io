@@ -48,3 +48,7 @@ window.addEventListener('appinstalled', (evt) => {
   app.logEvent('a2hs', 'installed');
 });
 
+
+if (window.matchMedia('(display-mode: standalone)').matches) {
+  element.parentNode.removeChild(btnAdd);
+}
