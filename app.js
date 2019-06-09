@@ -26,7 +26,7 @@ window.addEventListener('beforeinstallprompt', (e) => {
   deferredPrompt = e;
   // Update UI notify the user they can add to home screen
   
-  btnAdd = document.getElementById("element-id");
+  btnAdd = document.getElementById("btnAdd");
   btnAdd.style.display = 'block';
   btnAdd.addEventListener('click', (e) => {
     // hide our user interface that shows our A2HS button
@@ -54,5 +54,5 @@ window.addEventListener('appinstalled', (evt) => {
 
 
 if (window.matchMedia('(display-mode: standalone)').matches) {
-  document.getElementById("element-id").parentNode.removeChild(element);
+  document.getElementById("btnAdd").parentNode.removeChild(element);
 }
