@@ -17,7 +17,7 @@ if (workbox) {
 //workbox.precaching.precache(staticAssets);
 
 workbox.routing.registerRoute(
-  ./",
+  "./",
   workbox.strategies.CacheFirst()
 );
 
