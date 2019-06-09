@@ -15,6 +15,8 @@ if ('serviceWorker' in navigator && 'PushManager' in window) {
   pushButton.textContent = 'Push Not Supported';
 }
 
+btnAdd = document.getElementById("element-id");
+
 let deferredPrompt;
 
 window.addEventListener('beforeinstallprompt', (e) => {
@@ -50,5 +52,5 @@ window.addEventListener('appinstalled', (evt) => {
 
 
 if (window.matchMedia('(display-mode: standalone)').matches) {
-  element.parentNode.removeChild(btnAdd);
+  btnAdd.parentNode.removeChild(element);
 }
