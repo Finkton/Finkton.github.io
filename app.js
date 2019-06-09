@@ -4,3 +4,5 @@ if('serviceWorker' in navigator) {
       console.log('Service Worker Registered');
     });
   }
+
+console.log('app.js working');
