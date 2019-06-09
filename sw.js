@@ -7,21 +7,26 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-const staticAssets = [
-  './',
-  './styles.js',
-  './app.js',
-  './Chart.js',
-]
+// const staticAssets = [
+//   './',
+//   './styles.js',
+//   './app.js',
+//   './Chart.js',
+// ]
 
 //workbox.precaching.precache(staticAssets);
 
 workbox.routing.registerRoute(
-  new RegExp('.*\.js'),
-  workbox.strategies.networkFirst()
+  new RegExp('.*\./'),
+  workbox.strategies.CacheFirst()
 );
 
-workbox.routing.registerRoute(
-  new RegExp('.*\.css'),
-  workbox.strategies.networkFirst()
-);
+// workbox.routing.registerRoute(
+//   new RegExp('.*\.json'),
+//   workbox.strategies.CacheFirst()
+// );
+
+// workbox.routing.registerRoute(
+//   new RegExp('.*\.css'),
+//   workbox.strategies.networkFirst()
+// );
