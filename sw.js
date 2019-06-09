@@ -17,7 +17,7 @@ if (workbox) {
 //workbox.precaching.precache(staticAssets);
 
 workbox.routing.registerRoute(
-  new RegExp('.*\./'),
+  ./",
   workbox.strategies.CacheFirst()
 );
 
