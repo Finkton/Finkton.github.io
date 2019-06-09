@@ -75,37 +75,6 @@ async function getData() {
   return cleaned;
 }
 
-async function run() {
-  // Load and plot the original input data that we are going to train on.
-  const data = await getData();
-  const values = data.map(d => ({
-    x: d.horsepower,
-    y: d.mpg,
-  }));
-
-  tfvis.render.scatterplot(
-    {name: 'Horsepower v MPG'},
-    {values}, 
-    {
-      xLabel: 'Horsepower',
-      yLabel: 'MPG',
-      height: 300
-    }
-  );
-
-  // More code will be added below
-  const tensorData = convertToTensor(data);
-  const {inputs, labels} = tensorData;
-
-  // Train the model  
-  await trainModel(model, inputs, labels);
-  console.log('Done Training');
-  
-  // Predictions
-  testModel(model, data, tensorData);
-}
-
-document.addEventListener('DOMContentLoaded', run);
 
 
 // Define the model architecture
@@ -240,3 +209,36 @@ function testModel(model, inputData, normalizationData) {
     }
   );
 }
+
+async function run() {
+  // Load and plot the original input data that we are going to train on.
+  const data = await getData();
+  const values = data.map(d => ({
+    x: d.horsepower,
+    y: d.mpg,
+  }));
+
+  tfvis.render.scatterplot(
+    {name: 'Horsepower v MPG'},
+    {values}, 
+    {
+      xLabel: 'Horsepower',
+      yLabel: 'MPG',
+      height: 300
+    }
+  );
+
+  // More code will be added below
+  const tensorData = convertToTensor(data);
+  const {inputs, labels} = tensorData;
+
+  // Train the model  
+  await trainModel(model, inputs, labels);
+  console.log('Done Training');
+  
+  // Predictions
+  testModel(model, data, tensorData);
+}
+
+document.addEventListener('DOMContentLoaded', run);
+
