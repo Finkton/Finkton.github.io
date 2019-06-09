@@ -5,4 +5,3 @@ if('serviceWorker' in navigator) {
     });
   }
 
-console.log('app.js working');
