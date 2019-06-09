@@ -21,6 +21,8 @@ workbox.routing.registerRoute(
   workbox.strategies.CacheFirst()
 );
 
+console.log("update")
+
 // workbox.routing.registerRoute(
 //   new RegExp('.*\.json'),
 //   workbox.strategies.CacheFirst()
