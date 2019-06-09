@@ -21,12 +21,12 @@ workbox.routing.registerRoute(
   new workbox.strategies.CacheFirst()
 );
 
-// self.addEventListener('fetch', (event) => {
-//   if (event.request.url === '/') {
-//     const staleWhileRevalidate = new workbox.strategies.StaleWhileRevalidate();
-//     event.respondWith(staleWhileRevalidate.handle({event}));
-//   }
-// });
+self.addEventListener('fetch', (event) => {
+  if (event.request.url === '/') {
+    const staleWhileRevalidate = new workbox.strategies.StaleWhileRevalidate();
+    event.respondWith(staleWhileRevalidate.handle({event}));
+  }
+});
 
 // workbox.routing.registerRoute(
 //   new RegExp('.*\.json'),
