@@ -21,11 +21,13 @@ workbox.routing.registerRoute(
   new workbox.strategies.CacheFirst()
 );
 
-self.addEventListener('fetch', (event) => {
-  if (event.request.url === '/') {
-    const staleWhileRevalidate = new workbox.strategies.StaleWhileRevalidate();
-    event.respondWith(staleWhileRevalidate.handle({event}));
-  }
+self.addEventListener('fetch', function(event) {
+ console.log(event.request.url);
+ event.respondWith(
+   caches.match(event.request).then(function(response) {
+     return response || fetch(event.request);
+   })
+ );
 });
 
 // workbox.routing.registerRoute(
