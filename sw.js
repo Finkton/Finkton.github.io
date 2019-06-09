@@ -17,8 +17,8 @@ if (workbox) {
 //workbox.precaching.precache(staticAssets);
 
 workbox.routing.registerRoute(
-  RegExp('./'),
-  workbox.strategies.CacheFirst()
+  new RegExp('./'),
+  new workbox.strategies.CacheFirst()
 );
 
 console.log("update")
