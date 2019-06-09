@@ -54,5 +54,6 @@ window.addEventListener('appinstalled', (evt) => {
 
 
 if (window.matchMedia('(display-mode: standalone)').matches) {
-  document.getElementById("btnAdd").parentNode.removeChild(element);
+  var btnAdd = document.getElementById("btnAdd");
+  btnAdd.parentNode.removeChild(btnAdd);
 }
