@@ -76,7 +76,7 @@ window.onload = async function(e){
 
 
 async function async_main() {
-  tf.setBackend('cpu', true);
+//   tf.setBackend('cpu', true);
   console.log('loading')
   user_show.innerHTML = 'loading'
 
