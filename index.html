@@ -4,10 +4,10 @@
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+
     <!-- Manifest -->
     <link rel="manifest" href="manifest.json">
-    
+
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="./bootstrap.css">
@@ -15,8 +15,19 @@
     <title>Image Captioner</title>
   </head>
   <body>
-    
-    <button id = "btnAdd" type="button" class="btn" >Add to desktop</button>
+
+    <nav class="navbar navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">Image Captioner</a>
+      <button id = "btnAdd" type="button" class="btn" >Add to desktop</button>
+    </nav>
+
+
+
+    <!-- <button id = "speak" type="button" class="btn" >speak</button> -->
+    <img id='img' src='test.jpg'>
+    <input type="file" accept="image/*" class="btn" id="file-input" hidden>
+
+    <h5 id="user_show"></h5>
 
     <!-- My JavaScript -->
     <script src="app.js"></script>

@@ -7,15 +7,6 @@ if (workbox) {
   console.log(`Boo! Workbox didn't load 😬`);
 }
 
-// const staticAssets = [
-//   './',
-//   './styles.js',
-//   './app.js',
-//   './Chart.js',
-// ]
-
-//workbox.precaching.precache(staticAssets);
-
 workbox.routing.registerRoute(
   new RegExp('./'),
   new workbox.strategies.CacheFirst()
@@ -29,13 +20,3 @@ self.addEventListener('fetch', function(event) {
    })
  );
 });
-
-// workbox.routing.registerRoute(
-//   new RegExp('.*\.json'),
-//   workbox.strategies.CacheFirst()
-// );
-
-// workbox.routing.registerRoute(
-//   new RegExp('.*\.css'),
-//   workbox.strategies.networkFirst()
-// );
