@@ -94,25 +94,28 @@ async function async_main() {
 
 
   fileInput.hidden = false
+  user_show.innerHTML = ''
   // while(keeploop)if(clicked){
 }
 
 async function generate_text(){
-  console.log("generating text")
-  user_show.innerHTML = 'generating text'
-
+  user_show.innerHTML = 'processing image tensors'
   img = document.getElementById('img')
   img = tf.browser.fromPixels(img);
   img = img.expandDims(0)
+  user_show.innerHTML = 'recising image'
   img = tf.image.resizeBilinear(img,[224,224],false)
   img = img.div(tf.scalar(255))
   // console.log(img.shape)
   // img.print()
+  user_show.innerHTML = 'creating vgg features'
   feature = vgg16.predict(img)
   // feature.print()
 
 
 
+  console.log("generating text")
+  user_show.innerHTML = 'generating text'
   in_text = seq_to_words[1]
 
   max_length = 30
